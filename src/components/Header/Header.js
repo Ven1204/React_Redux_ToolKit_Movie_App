@@ -9,10 +9,13 @@ import "./Header.scss";
 const Header = () => {
   const [term, setTerm] = useState("");
   const dispatch = useDispatch();
+  // search
   const submitHandler = (e) => {
     e.preventDefault();
+    if(term === "") return alert("Please enter Search Term");
     dispatch(fetchAsyncMovies(term));
     dispatch(fetchAsyncShows(term));
+    setTerm("");
   }
 
   return (

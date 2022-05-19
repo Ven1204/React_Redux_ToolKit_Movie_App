@@ -3,7 +3,7 @@
   background: $secondary-color;
   cursor: pointer;
   transition: all 0.3s;
-  min-height: 450px;
+  // min-height: 350px;
   height: 100%;
   margin: 10px;
   &:hover {
@@ -12,8 +12,12 @@
   }
 }
 
+.card-inner{
+  // height: 350px;
+}
+
 .card-top {
-  height: 300px;
+  height: 350px;
 
   img {
     width: 100%;
@@ -23,6 +27,8 @@
 
 .card-bottom {
   padding: 20px;
+  position: relative;
+  // top: -180px;
 }
 .card-info {
   color: $font-primary;
