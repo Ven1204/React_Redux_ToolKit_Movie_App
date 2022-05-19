@@ -7,10 +7,12 @@ import { fetchAsyncMovies, fetchAsyncShows } from "../../features/movies/movieSl
 const Home = () => {
   // dispatch from redux
   const dispatch = useDispatch();
-
+  const movieText = 'Pirates'
+  const showText = 'Doctor'
+  // 1st fetch the data
   useEffect(() => {
-    dispatch(fetchAsyncMovies());
-    dispatch(fetchAsyncShows());
+    dispatch(fetchAsyncMovies(movieText));
+    dispatch(fetchAsyncShows(showText));
   }, [dispatch]);
 
   return (
