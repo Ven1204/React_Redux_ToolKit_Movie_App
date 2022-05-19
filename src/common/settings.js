@@ -1,3 +1,4 @@
+//  this is for responsive settings of react slick carousel
  export const settings = {
       dots: false,
       infinite: false,

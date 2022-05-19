@@ -2,8 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./MovieCard.scss";
 
+// card component --contains data from api
 const MovieCard = (props) => {
   const { data } = props;
+
   return (
     <div className="card-item">
       <Link to={`/movie/${data.imdbID}`}>
